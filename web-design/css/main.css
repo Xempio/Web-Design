@@ -13,10 +13,12 @@
     text-decoration: none !important;
 }
 
-html, body {
-    overflow-x: hidden;
+html,body {
+    overflow-x: hidden!important;
 }
-
+body{
+    width: 100%;
+}
 
 /* Header */
 header {
@@ -285,11 +287,15 @@ header #icon {
         align-items: center;
         justify-content: center;
     }
-    #sneakers .col-lg-4{
+    #sneakers .col-lg-4,
+    #sneakers .col-lg-8{
         display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    #sneakers .col-lg-8.d-flex {
+        padding-left: 20px;
     }
     #sneakers .rect,
     #sneakers .rect2,
@@ -299,9 +305,6 @@ header #icon {
     #sneakers .circle3 {
         left: 180px;
         top: 5px;
-    }
-    #sneakers .rect_text {
-        margin-top: 10px;
     }
 }
 
@@ -974,15 +977,16 @@ header #icon {
     }
     #map .bg_img {
         position: relative;
-        left: -50px;
+        left: -60px;
         overflow: hidden;
+        overflow-y: hidden;
     }
     #map .map-card {
-        left: 80px;
+        left: 50px;
         top: 31px;
     }
     #map .map-card-circle1 {
-        left: 190px;
+        left: 160px;
     }
 
     #map .map-card-circle3 {
@@ -1005,7 +1009,7 @@ header #icon {
     }
 }
 
-@media (max-width: 1450px) {
+@media (min-width: 768px) and (max-width: 1450px) {
     #map .bg_img {
         position: relative;
         left: -50px;
@@ -1066,6 +1070,9 @@ footer .footer-margin {
 
 /* Media querries for footer */
 @media (max-width: 768px) {
+    footer {
+        z-index: 20;
+    }
     footer .footer-margin {
         margin-left: auto;
         margin-right: auto;
