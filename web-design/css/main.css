@@ -13,7 +13,7 @@
     text-decoration: none !important;
 }
 
-html {
+html, body {
     overflow-x: hidden;
 }
 
@@ -1000,6 +1000,52 @@ header #icon {
     #map .map-card-circle10 {
         display: none;
     }
+    #map .map-text {
+        display: none;
+    }
+}
+
+@media (max-width: 1450px) {
+    #map .bg_img {
+        position: relative;
+        left: -50px;
+        overflow: hidden;
+    }
+    #map .map-card {
+        left: 180px;
+        top: 31px;
+    }
+    #map .map-card-circle1 {
+        left: 290px;
+    }
+    #map .map-card-circle3 {
+        left: 460px;
+    }
+    #map .map-card-circle5 {
+        left: 470px;
+    }
+    #map .map-card-circle2 {
+        left: 350px;
+    }
+    #map .map-card-circle4 {
+        left: 500px;
+    }
+    #map .map-card-circle6 {
+        left: 550px;
+    }
+    #map .map-card-circle7 {
+        left: 720px;
+    }
+    #map .map-card-circle8 {
+        left: 940px;
+    }
+    #map .map-card-circle9 {
+        left: 1050px;
+    }
+    #map .map-card-circle10 {
+        left: 1020px;
+    }
+    
     #map .map-text {
         display: none;
     }
